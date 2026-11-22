@@ -7,12 +7,14 @@
     </head>
     <body>
         <h1>Záložky</h1>
-        <h2>Časté</h2>
-            <p><a href="https://www.youtube.com/feed/subscriptions" target="_blank" style="text-decoration-line:none;">YouTube</a></p>
-            <p><a href="https://mapa.pid.cz" target="_blank" style="text-decoration-line:none;">Mapa PID</a></p>
-            <p><a href="https://www.dpp.cz/" target="_blank" style="text-decoration-line:none;">Spojení MHD</a></p>
-            <p><a href="https://mods.factorio.com/browse/updated" target="_blank" style="text-decoration-line:none;">Factorio - updaty modů</a></p>
-            <p><a href="https://forums.factorio.com/viewforum.php?f=3" target="_blank" style="text-decoration-line:none;">Factorio - releasy</a></p>
+        <div id="časté">
+            <h2>Časté</h2>
+                <p><a href="https://www.youtube.com/feed/subscriptions" target="_blank" style="text-decoration-line:none;">YouTube</a></p>
+                <p><a href="https://mapa.pid.cz" target="_blank" style="text-decoration-line:none;">Mapa PID</a></p>
+                <p><a href="https://www.dpp.cz/" target="_blank" style="text-decoration-line:none;">Spojení MHD</a></p>
+                <p><a href="https://mods.factorio.com/browse/updated" target="_blank" style="text-decoration-line:none;">Factorio - updaty modů</a></p>
+                <p><a href="https://forums.factorio.com/viewforum.php?f=3" target="_blank" style="text-decoration-line:none;">Factorio - releasy</a></p>
+        </div>
         
         <h2>Zprávy</h2>
             <p><a href="https://ct24.ceskatelevize.cz/" target="_blank" style="text-decoration-line:none;">ČT24</a></p>
@@ -44,19 +46,21 @@
             <p><a href="https://news.ycombinator.com/" target="_blank" style="text-decoration-line:none;">Hacker News</a></p>
             <p><a href="https://bearblog.dev/discover/" target="_blank" style="text-decoration-line:none;">Bear blog</a></p>
             <p><a href="https://www.reddit.com/r/czech/" target="_blank" style="text-decoration-line:none;">r/czech</a></p>
-            <p><a href="https://4chan.org/" target="_blank" style="text-decoration-line:none;">4chan</a></p>        
+            <p><a href="https://4chan.org/" target="_blank" style="text-decoration-line:none;">4chan</a></p>     
 
-        <p>Heslo: Github - sync</p>
-        <a id="myLink" onclick="myFunction();">link text</a>
+        <h2>Administrace</h2>
+            <p><a href="https://github.com/" target="_blank" style="text-decoration-line:none;">Github - Heslo: Github - sync</a></p>
+        
+        <a id="myLink" onclick="toggleVisibility("časté");">link text</a>
         <script>
-            function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-} 
+            function toggleVisibility(divName) {
+              var x = document.getElementById(divName);
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            } 
         </script>
     </body>
 </html>
