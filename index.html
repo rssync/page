@@ -37,6 +37,10 @@
              .inlineBlock { 
                  padding: 0em 0.25em; 
              } 
+
+             .closed {
+                 display:none;
+             }
              
              @media (prefers-color-scheme: dark) { 
                  :root { color-scheme: dark; } 
@@ -63,7 +67,16 @@
                     <p><a href="https://mods.factorio.com/browse/updated" target="_blank" style="text-decoration-line:none;">Factorio - updaty modů</a></p>
                     <p><a href="https://forums.factorio.com/viewforum.php?f=3" target="_blank" style="text-decoration-line:none;">Factorio - releasy</a></p>
                 </div>
-
+        
+            <h2 onclick="toggleVisibility('aktuální');">Aktuálně otevřené</h2>
+                <div id="aktuální" class="closed">
+                    <p><a href="https://www.youtube.com/feed/subscriptions" target="_blank" style="text-decoration-line:none;">YouTube</a></p>
+                    <p><a href="https://mapa.pid.cz" target="_blank" style="text-decoration-line:none;">Mapa PID</a></p>
+                    <p><a href="https://www.dpp.cz/" target="_blank" style="text-decoration-line:none;">Spojení MHD</a></p>
+                    <p><a href="https://mods.factorio.com/browse/updated" target="_blank" style="text-decoration-line:none;">Factorio - updaty modů</a></p>
+                    <p><a href="https://forums.factorio.com/viewforum.php?f=3" target="_blank" style="text-decoration-line:none;">Factorio - releasy</a></p>
+                </div>
+        
             <h2 onclick="toggleVisibility('zprávy');">Zprávy</h2>
                 <div id="zprávy">
                     <p><a href="https://ct24.ceskatelevize.cz/" target="_blank" style="text-decoration-line:none;">ČT24</a></p>
@@ -110,7 +123,7 @@
                 </div>
 
         <h2 onclick="toggleVisibility('administrace');">Administrace</h2>
-                <div id="administrace" style="display:none;">
+                <div id="administrace" class="closed">
                     <p><a href="https://github.com/" target="_blank" style="text-decoration-line:none;">Github - Heslo: Github - sync</a></p>
                     <p><a id="myLink" onclick="toggleVisibility('časté');">Pokus</a></p>
                     <p>Komiksy xkcd oatmeal atd</p>
