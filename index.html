@@ -6,55 +6,67 @@
          <title>Záložky</title>
     </head>
     <body>
-        <h1  onclick="toggleVisibility('časté');">Záložky</h1>
-            <h2>Časté</h2>
-        <div id="časté">
-                <p><a href="https://www.youtube.com/feed/subscriptions" target="_blank" style="text-decoration-line:none;">YouTube</a></p>
-                <p><a href="https://mapa.pid.cz" target="_blank" style="text-decoration-line:none;">Mapa PID</a></p>
-                <p><a href="https://www.dpp.cz/" target="_blank" style="text-decoration-line:none;">Spojení MHD</a></p>
-                <p><a href="https://mods.factorio.com/browse/updated" target="_blank" style="text-decoration-line:none;">Factorio - updaty modů</a></p>
-                <p><a href="https://forums.factorio.com/viewforum.php?f=3" target="_blank" style="text-decoration-line:none;">Factorio - releasy</a></p>
-        </div>
+        <h1>Záložky</h1>
+            <h2 onclick="toggleVisibility('časté');">Časté</h2>
+                <div id="časté">
+                    <p><a href="https://www.youtube.com/feed/subscriptions" target="_blank" style="text-decoration-line:none;">YouTube</a></p>
+                    <p><a href="https://mapa.pid.cz" target="_blank" style="text-decoration-line:none;">Mapa PID</a></p>
+                    <p><a href="https://www.dpp.cz/" target="_blank" style="text-decoration-line:none;">Spojení MHD</a></p>
+                    <p><a href="https://mods.factorio.com/browse/updated" target="_blank" style="text-decoration-line:none;">Factorio - updaty modů</a></p>
+                    <p><a href="https://forums.factorio.com/viewforum.php?f=3" target="_blank" style="text-decoration-line:none;">Factorio - releasy</a></p>
+                </div>
 
-            <h2  onclick="toggleVisibility('zprávy');">Zprávy</h2>
+            <h2 onclick="toggleVisibility('zprávy');">Zprávy</h2>
+                <div id="zprávy">
+                    <p><a href="https://ct24.ceskatelevize.cz/" target="_blank" style="text-decoration-line:none;">ČT24</a></p>
+                    <p><a href="https://www.pravda.com.ua/eng/" target="_blank" style="text-decoration-line:none;">Ukrajinska Pravda (Eng)</a></p>
+                </div>
         
-        <div id="zprávy">
-                <p><a href="https://ct24.ceskatelevize.cz/" target="_blank" style="text-decoration-line:none;">ČT24</a></p>
-                <p><a href="https://www.pravda.com.ua/eng/" target="_blank" style="text-decoration-line:none;">Ukrajinska Pravda (Eng)</a></p>
-        </div>
-        <h2>Čtení</h2></h2>
-            <p><a href="https://bearblog.dev/discover/" target="_blank" style="text-decoration-line:none;">Bear blog</a></p>
-        <p><a href="https://grapheneos.org/usage" target="_blank" style="text-decoration-line:none;">GrapheneOS</a></p>
+            <h2 onclick="toggleVisibility('čtení');">Čtení</h2></h2>
+                <div id="čtení">
+                    <p><a href="https://bearblog.dev/discover/" target="_blank" style="text-decoration-line:none;">Bear blog</a></p>
+                    <p><a href="https://grapheneos.org/usage" target="_blank" style="text-decoration-line:none;">GrapheneOS</a></p>
+                </div>
             
             
-        <h2 id="myDIV">Videa</h2>
-            <p><a href="https://www.ceskatelevize.cz/ivysilani/" target="_blank" style="text-decoration-line:none;">iVysílání</a></p>
-            <p><a href="https://www.oneplay.cz/porad/365143-bozi-plan" target="_blank" style="text-decoration-line:none;">OnePlay - Boží plán</a></p>
-            <p><a href="https://hellspy.to" target="_blank" style="text-decoration-line:none;">Hellspy</a></p>
+        <h2 onclick="toggleVisibility('videa');">Videa</h2>
+                <div id="videa">
+                    <p><a href="https://www.ceskatelevize.cz/ivysilani/" target="_blank" style="text-decoration-line:none;">iVysílání</a></p>
+                    <p><a href="https://www.oneplay.cz/porad/365143-bozi-plan" target="_blank" style="text-decoration-line:none;">OnePlay - Boží plán</a></p>
+                    <p><a href="https://hellspy.to" target="_blank" style="text-decoration-line:none;">Hellspy</a></p>
+                </div>
         
-        <h2>Kultura</h2>
-            <p><a href="https://kino35.ifp.cz/" target="_blank" style="text-decoration-line:none;">Kino 35</a></p>
-            <p><a href="https://praha.karabas.cz/" target="_blank" style="text-decoration-line:none;">Karabas</a></p>
-            <p><a href="https://cz.mticket.eu/uk/prague" target="_blank" style="text-decoration-line:none;">mticket</a></p>
+        <h2 onclick="toggleVisibility('kultura');">Kultura</h2>
+                <div id="kultura">
+                    <p><a href="https://kino35.ifp.cz/" target="_blank" style="text-decoration-line:none;">Kino 35</a></p>
+                    <p><a href="https://praha.karabas.cz/" target="_blank" style="text-decoration-line:none;">Karabas</a></p>
+                    <p><a href="https://cz.mticket.eu/uk/prague" target="_blank" style="text-decoration-line:none;">mticket</a></p>
+                </div>
         
-        <h2>Různé</h2>
-            <p><a href="https://radar.bourky.cz/" target="_blank" style="text-decoration-line:none;">Radar</a></p>
-            <p><a href="https://produkty.chmi.cz/radar/?display=gmaps&gmap_zoom=7&prod=maxz_mask-li&opa1=0.7&opa2=0.8&nselect=3&nselect_fct=0&rep=5&add=7&update=1&lat=50.198&lon=14.5199&lang=CZ" target="_blank" style="text-decoration-line:none;">Radar ČHMI</a></p>
-            <p><a href="https://vzdelavani.dpp.cz/course/view.php?id=435" target="_blank" style="text-decoration-line:none;">ZK řidiče TRAM</a></p>        
-            <p><a href="https://www.openstreetmap.org/#map=11/50.0944/14.4402" target="_blank" style="text-decoration-line:none;">OSM</a></p>
+        <h2 onclick="toggleVisibility('různé');">Různé</h2>
+                <div id="různé">
+                    <p><a href="https://radar.bourky.cz/" target="_blank" style="text-decoration-line:none;">Radar</a></p>
+                    <p><a href="https://produkty.chmi.cz/radar/?display=gmaps&gmap_zoom=7&prod=maxz_mask-li&opa1=0.7&opa2=0.8&nselect=3&nselect_fct=0&rep=5&add=7&update=1&lat=50.198&lon=14.5199&lang=CZ" target="_blank" style="text-decoration-line:none;">Radar ČHMI</a></p>
+                    <p><a href="https://vzdelavani.dpp.cz/course/view.php?id=435" target="_blank" style="text-decoration-line:none;">ZK řidiče TRAM</a></p>        
+                    <p><a href="https://www.openstreetmap.org/#map=11/50.0944/14.4402" target="_blank" style="text-decoration-line:none;">OSM</a></p>
+                </div>
         
-        <h2>Ztráta času</h2>
-            <p><a href="https://www.novinky.cz/" target="_blank" style="text-decoration-line:none;">Novinky.cz</a></p
-            <p><a href="https://www.zive.cz/" target="_blank" style="text-decoration-line:none;">Živě.cz</a></p>
-            <p><a href="https://news.ycombinator.com/" target="_blank" style="text-decoration-line:none;">Hacker News</a></p>
-            <p><a href="https://bearblog.dev/discover/" target="_blank" style="text-decoration-line:none;">Bear blog</a></p>
-            <p><a href="https://www.reddit.com/r/czech/" target="_blank" style="text-decoration-line:none;">r/czech</a></p>
-            <p><a href="https://4chan.org/" target="_blank" style="text-decoration-line:none;">4chan</a></p>     
+        <h2 onclick="toggleVisibility('ztráta');">Ztráta času</h2>
+                <div id="ztráta">
+                    <p><a href="https://www.novinky.cz/" target="_blank" style="text-decoration-line:none;">Novinky.cz</a></p
+                    <p><a href="https://www.zive.cz/" target="_blank" style="text-decoration-line:none;">Živě.cz</a></p>
+                    <p><a href="https://news.ycombinator.com/" target="_blank" style="text-decoration-line:none;">Hacker News</a></p>
+                    <p><a href="https://bearblog.dev/discover/" target="_blank" style="text-decoration-line:none;">Bear blog</a></p>
+                    <p><a href="https://www.reddit.com/r/czech/" target="_blank" style="text-decoration-line:none;">r/czech</a></p>
+                    <p><a href="https://4chan.org/" target="_blank" style="text-decoration-line:none;">4chan</a></p>     
+                </div>
 
-        <h2>Administrace</h2>
-            <p><a href="https://github.com/" target="_blank" style="text-decoration-line:none;">Github - Heslo: Github - sync</a></p>
-        
-        <a id="myLink" onclick="toggleVisibility('časté');">link text</a>
+        <h2 onclick="toggleVisibility('administrace');">Administrace</h2>
+                <div id="administrace">
+                    <p><a href="https://github.com/" target="_blank" style="text-decoration-line:none;">Github - Heslo: Github - sync</a></p>
+                    <p><a id="myLink" onclick="toggleVisibility('časté');">Pokus</a></p>
+                </div>
+            
         <script>
             function toggleVisibility(divName) {
               var x = document.getElementById(divName);
